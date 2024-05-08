@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+/* Escopo GLOBAL */
+
+/* Aqui vou declarar tudo que será aplicado globalmente, ou seja, em todo o projeto */
+
+* {
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Quero q TODOS os LINKS(tags 'a') fiquei na cor verde */
+a {
+    color: green;
+}
+
+.title {
+    background-color: black;
+    color: aqua;
+}
+
+p {
+    padding: 1rem;
+}
+
+/* estilo criado para SEPARAR uma aula da outra */
+body {
+    padding-bottom: 500px;
+    /*pra nao precisar trabalhar no limite da tela */
+}
+
+.divisaoPorAula {
+    border-bottom: 1px solid red;
+    padding: 2rem;
+    margin-bottom: .5rem;
+}

@@ -1,1 +1,21 @@
-<h1>Hello World Angular!</h1>
+<!-- Importar todos os componentes filhos aqui, no comp PAI -->
+
+<h1>Oi, dev!</h1>
+
+<!-- CSS -->
+<div><a href="#">Link teste de CSS GLOBAL no app.component</a></div>
+
+<!-- Importações de novos componentes -->
+<app-first-component></app-first-component>
+<app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
+<!-- uso do INPUT: vou chamar o dado do comp. filho, AQUI no comp. PAI -->
+<!-- Preciso CRIAR a prop 'NAME' usando o 'input' lá na prop PAI parent-data.ts -->
+<!-- Por FIM, uso esse dado no Template do parent-data -->
+
+<app-directives></app-directives>
+<app-if-render></app-if-render>
+<app-events></app-events>
+<app-emitter></app-emitter>
+<app-list-render></app-list-render>
+<app-pipes></app-pipes>
+<app-two-way-binding></app-two-way-binding>

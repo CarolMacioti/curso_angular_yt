@@ -1,0 +1,13 @@
+<div class="divisaoPorAula">
+  <h1>Aula 12 - Renderização de Listas | List Render</h1>
+  <h2>Animais:</h2>
+
+  <!-- Lista para chamar os objetos(ul + li) -->
+  <ul>
+    <li *ngFor="let animal of animals">
+      O animal é: {{ animal.name }} - espécie: {{ animal.type }}
+      <button (click)="showAge(animal)">Idade</button>
+    </li>
+  </ul>
+  <h3>{{ animalsDetails }}</h3>
+</div>

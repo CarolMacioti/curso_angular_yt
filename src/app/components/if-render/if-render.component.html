@@ -1,0 +1,9 @@
+<div class="divisaoPorAula">
+  <h1>Aula - If-Render | List Render</h1>
+  <div *ngIf="canShow">Mostrando texto permitido pela condicional | ngIf</div>
+
+  <h2 *ngIf="name == 'Carol'; else nameNotFound">O nome é Carol.</h2>
+  <ng-template #nameNotFound>
+    <div>O nome "Carol" não foi encontrado!</div>
+  </ng-template>
+</div>
