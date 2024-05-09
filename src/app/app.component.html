@@ -1,21 +1,14 @@
 <!-- Importar todos os componentes filhos aqui, no comp PAI -->
+<p>HEADER</p>
 
-<h1>Oi, dev!</h1>
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/list">Lista</a>
+</nav>
 
-<!-- CSS -->
-<div><a href="#">Link teste de CSS GLOBAL no app.component</a></div>
+<h1>Curso de Angular</h1>
 
-<!-- Importações de novos componentes -->
-<app-first-component></app-first-component>
-<app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
-<!-- uso do INPUT: vou chamar o dado do comp. filho, AQUI no comp. PAI -->
-<!-- Preciso CRIAR a prop 'NAME' usando o 'input' lá na prop PAI parent-data.ts -->
-<!-- Por FIM, uso esse dado no Template do parent-data -->
+<router-outlet></router-outlet>
+<!-- Só o que estiver aqui IRÁ MUDAR -->
 
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-events></app-events>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<p>FOOTER</p>
