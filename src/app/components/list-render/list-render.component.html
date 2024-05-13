@@ -5,7 +5,8 @@
   <!-- Lista para chamar os objetos(ul + li) -->
   <ul>
     <li *ngFor="let animal of animals">
-      O animal é: {{ animal.name }} - espécie: {{ animal.type }}
+      O animal é: <a routerLink="/list/{{ animal.id }}">{{ animal.name }}</a> -
+      espécie: {{ animal.type }}
       <button (click)="showAge(animal)">Idade</button>
       <button (click)="removeAnimal(animal)">Excluir</button>
     </li>
